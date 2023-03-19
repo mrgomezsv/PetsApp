@@ -1,3 +1,8 @@
 <resources>
     <string name="app_name">Patitas</string>
+    <string name="welcome">¡Bienvenidos a Pets App!</string>
+    <string name="conoce">"Dejanos conocerte a ti y "</string>
+    <string name="linea2_login">a tus Mascotas</string>
+    <string name="google">Ingresa con Google</string>
+    <string name="version">Power by www.webforallsv.com - v1.0</string>
 </resources>
