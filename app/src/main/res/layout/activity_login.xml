@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:padding="16dp"
+    tools:context=".activity_login">
+
+    <EditText
+        android:id="@+id/editTextUsername"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Username"
+        android:layout_marginTop="200dp"
+        android:inputType="text"/>
+
+    <EditText
+        android:id="@+id/editTextPassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Password"
+        android:inputType="textPassword"/>
+
+    <Button
+        android:id="@+id/buttonLogin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="Login"/>
+
+    <TextView
+        android:id="@+id/textViewRegister"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Don't have an account?"
+        android:gravity="center"
+        android:textColor="@color/design_default_color_primary_dark"
+        android:textStyle="bold"
+        android:paddingTop="16dp"/>
+
+    <TextView
+        android:id="@+id/textViewRegister2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Don't worry! Register here!"
+        android:gravity="center"
+        android:textColor="@color/design_default_color_primary_dark"
+        android:textStyle="bold"
+        android:paddingTop="16dp"/>
+
+    <Button
+        android:id="@+id/buttonRegisterLogin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="Register"/>
+
+</LinearLayout>
