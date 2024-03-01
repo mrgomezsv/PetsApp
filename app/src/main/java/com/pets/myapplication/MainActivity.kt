@@ -14,7 +14,7 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
 
         //Logica para la Animación
-        val backgroundImg : TextView = findViewById(R.id.iv_logo)
+        val backgroundImg : ImageView = findViewById(R.id.iv_logo)
         val sideAnimation = AnimationUtils.loadAnimation(this, R.anim.slide)
         backgroundImg.startAnimation(sideAnimation)
 

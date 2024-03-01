@@ -75,17 +75,25 @@ class activity_validation : AppCompatActivity() {
 
     private fun setupButtonValidation() {
         val editTexts = listOf(editText1, editText2, editText3, editText4, editText5, editText6)
+
+        // Actualiza el estado del botón basado en el contenido actual de los EditTexts
+        fun updateButtonState() {
+            val allFilled = editTexts.all { it.text.isNotEmpty() }
+            buttonValidate.isEnabled = allFilled
+        }
+
+        // Agrega un TextWatcher a cada EditText para que el botón se actualice según sea necesario
         editTexts.forEach { editText ->
             editText.addTextChangedListener(object : TextWatcher {
                 override fun beforeTextChanged(s: CharSequence?, start: Int, count: Int, after: Int) {}
-
                 override fun onTextChanged(s: CharSequence?, start: Int, before: Int, count: Int) {}
-
                 override fun afterTextChanged(s: Editable?) {
-                    val allFilled = editTexts.all { it.text.isNotEmpty() }
-                    buttonValidate.isEnabled = allFilled
+                    updateButtonState() // Llama a la función para actualizar el estado del botón
                 }
             })
         }
+
+        // Asegúrate de que el botón esté desactivado al inicio
+        updateButtonState()
     }
 }
