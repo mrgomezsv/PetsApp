@@ -8,6 +8,7 @@ import android.text.TextWatcher
 import android.widget.Button
 import android.widget.EditText
 
+
 class activity_validation : AppCompatActivity() {
 
     private lateinit var editText1: EditText
